@@ -1,0 +1,139 @@
+/* Reset some default styling */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header is above other content */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 1rem;
+}
+
+.text{
+    position: fixed;
+    top: auto;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+.planet {
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.planet img {
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.planet h3 {
+    margin-top: 0.5rem;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .mission {
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission img {
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+}
+
+.mission h3 {
+    margin-top: 0.5rem;
+    color: #333;
+}@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .mission {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .mission h3 {
+        font-size: 1rem;
+    }
+}
+
